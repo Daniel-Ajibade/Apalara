@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apalara Yoruba - Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">Apalara Yoruba</a></div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Nav links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== LOGIN FORM ===== -->
+    <section class="login-section">
+      <h1>Login to Apalara Yoruba</h1>
+      <form class="login-form">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p class="coming-soon">
+        Student Portal / LMS, account creation, and progress tracking are
+        <strong>Coming Soon!</strong>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Apalara Yoruba. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
