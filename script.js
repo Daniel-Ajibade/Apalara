@@ -81,13 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
        MODAL PLACEHOLDER (COMING SOON)
     ============================= */
     // Example for "Join Club" modal
-    const joinButtons = document.querySelectorAll('.btn-secondary');
+    // const joinButtons = document.querySelectorAll('.btn-secondary');
 
-    joinButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            alert("Feature Coming Soon: Video conferencing / Cultural Club enrollment!");
-        });
-    });
+    // joinButtons.forEach(btn => {
+    //     btn.addEventListener('click', () => {
+    //         alert("Feature Coming Soon: Video conferencing / Cultural Club enrollment!");
+    //     });
+    // });
 
 });
 // Hamburger menu toggle

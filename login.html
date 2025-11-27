@@ -30,6 +30,103 @@
       </nav>
     </header>
 
+    <!-- ===== REGISTRATION FORM ===== -->
+    <section class="register-section">
+      <h1>Register for Apalara Yoruba Program</h1>
+
+      <form
+        class="register-form"
+        action="https://formsubmit.co/ajibadedanieloluwafemi@gmail.com"
+        method="POST"
+      >
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Yoruba Program Registration"
+        />
+
+        <div class="form-row">
+          <div>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="First Name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="Last Name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+
+        <label for="regEmail">Email:</label>
+        <input
+          type="email"
+          id="regEmail"
+          name="Email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="Phone"
+          placeholder="+234 800 000 0000"
+          required
+        />
+
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="Address"
+          placeholder="Your address"
+          required
+        />
+
+        <label for="students">Number of Students to Register:</label>
+        <input
+          type="number"
+          id="students"
+          name="Number of Students"
+          min="1"
+          placeholder="1"
+          required
+        />
+
+        <label for="heard">How did you hear about the program?</label>
+        <select id="heard" name="Referrer" required>
+          <option value="" disabled selected>Select an option</option>
+          <option>Sponsored Ad</option>
+          <option>Instagram</option>
+          <option>Facebook</option>
+          <option>Google Search</option>
+          <option>Friends/Family</option>
+          <option>LinkedIn</option>
+          <option>WhatsApp Status</option>
+          <option>Community/Group</option>
+          <option>YouTube</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Submit Registration</button>
+      </form>
+    </section>
+
     <!-- ===== LOGIN FORM ===== -->
     <section class="login-section">
       <h1>Login to Apalara Yoruba</h1>
