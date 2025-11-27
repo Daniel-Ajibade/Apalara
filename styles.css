@@ -121,16 +121,6 @@ section {
   margin-top: 1.5rem; /* spacing from content above */
 }
 
-.btn-primary {
-  background-color: #d94f2a;
-  color: #fff;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #b23c1f;
-}
-
 .btn-secondary {
   background-color: #fff;
   color: #d94f2a;
@@ -635,7 +625,7 @@ footer {
 /* Primary Button */
 .btn-primary {
   padding: 12px;
-  background: #7b2cbf;
+  background: #d94f2a;
   border: none;
   color: #fff;
   border-radius: 8px;
@@ -646,7 +636,7 @@ footer {
 }
 
 .btn-primary:hover {
-  background: #5a189a;
+  background: #b23c1f;
 }
 
 .btn-primary:active {
