@@ -383,7 +383,7 @@ footer {
 .ceo-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
@@ -392,7 +392,13 @@ footer {
 
 .ceo-details {
   flex: 1;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-height: 500px;
+  height: auto;
+} 
 
 .ceo-details h2 {
   color: #d94f2a;
@@ -410,8 +416,13 @@ footer {
 }
 
 .ceo-image img {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+  max-height: 500px;
   border-radius: 8px;
+  object-fit: cover;
+  
 }
 
 /* Responsive CEO section */
@@ -427,7 +438,7 @@ footer {
   }
 
   .ceo-image img {
-    max-width: 250px;
+    max-width: 350px;
     margin: 0 auto;
   }
 }
