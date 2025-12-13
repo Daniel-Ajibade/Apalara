@@ -846,3 +846,57 @@ footer {
     gap: 40px;
   }
 }
+/* Instructors Section */
+.instructors {
+  background-color: #fff;
+  padding: 4rem 2rem;
+}
+
+.instructors-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.instructors-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #222;
+}
+
+/* Instructor Gallery */
+.instructor-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* Instructor Card */
+.instructor-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Instructor Image */
+.instructor-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Instructor Name */
+.instructor-card h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
