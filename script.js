@@ -155,15 +155,30 @@ updateSlide();
 const reveals = document.querySelectorAll(".reveal");
 
 const revealOnScroll = () => {
-  reveals.forEach((el) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
+    reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
 
-    if (elementTop < windowHeight - 100) {
-      el.classList.add("active");
-    }
-  });
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
 };
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+
+
+const video = document.querySelector('.ceeo-video video');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            video.play();
+        } else {
+            video.pause(); // optional
+        }
+    });
+}, { threshold: 0.5 });
+
+observer.observe(video);
