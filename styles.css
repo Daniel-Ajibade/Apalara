@@ -184,7 +184,6 @@ section {
 .hero-buttons {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   margin-top: 2rem; /* space below hero text */
 }
 
@@ -423,7 +422,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  max-height: 500px;
+  /* max-height: 500px; */
   height: auto;
 }
 
@@ -788,8 +787,20 @@ footer {
 .price {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  text-align: left;
 }
+.price-list {
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  padding-left: 1.2rem; /* aligns bullets nicely */
+  margin: 1rem 0 1.5rem;
+}
+
+.price-list li {
+  margin-bottom: 0.5rem;
+}
+
 
 .coming-soon {
   color: #c47b00;
@@ -899,4 +910,366 @@ footer {
   font-size: 1.1rem;
   color: #333;
   margin: 0;
+}
+/* Benefits Section */
+.benefits {
+  background-color: #fdf7f2;
+  padding: 4rem 2rem;
+}
+
+.benefits-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.benefits-intro {
+  font-size: 1.05rem;
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Benefit Card */
+.benefit-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card .icon {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #d94f2a;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Difference Section */
+.difference {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.difference h3 {
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.difference ul {
+  list-style: none;
+  padding: 0;
+}
+
+.difference li {
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+}
+
+/* Audience & Vision */
+.audience,
+.vision {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.audience h3,
+.vision h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.audience p,
+.vision p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+/* ================================
+   WE ARE HIRING SECTION
+================================ */
+
+.hiring {
+  background: #fff8f4;
+  padding: 4rem 2rem;
+}
+
+.hiring-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hiring h2 {
+  color: #d94f2a;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hiring-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Roles Grid */
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop */
+  gap: 1.5rem;
+}
+
+/* Role Card */
+.role-card {
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
+}
+
+.role-icon {
+  font-size: 2.3rem;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.role-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.role-card p {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* Hiring CTA */
+.hiring-cta {
+  margin-top: 4rem;
+  background: #d94f2a;
+  color: #ffffff;
+  padding: 2.8rem 2rem;
+  border-radius: 20px;
+}
+
+.hiring-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.hiring-cta p {
+  margin-bottom: 1.4rem;
+}
+
+/* ================================
+   RESPONSIVE BREAKPOINTS
+================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .roles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hiring {
+    padding: 3rem 1.2rem;
+  }
+
+  .roles-grid {
+    grid-template-columns: repeat(2, 1fr); /* KEEP 2 per row */
+    gap: 1rem;
+  }
+
+  .role-card {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .role-icon {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .role-card h3 {
+    font-size: 1rem;
+  }
+
+  .role-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .hiring-cta {
+    margin-top: 3rem;
+    padding: 2.2rem 1.5rem;
+  }
+}
+
+/* Floating Icon Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* ================================
+   CLASS LEVELS (ISOLATED STYLES)
+================================ */
+
+.levels-section {
+  background: #fdf7f2;
+  padding: 5rem 2rem;
+}
+
+.levels-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #222;
+  margin-bottom: 3rem;
+}
+
+.levels-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.level-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.15);
+}
+
+.level-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.level-header {
+  padding: 1.6rem 1.6rem 0.5rem;
+}
+
+.level-header h3 {
+  margin-bottom: 0.3rem;
+  color: #d94f2a;
+}
+
+.level-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.level-body {
+  padding: 1rem 1.6rem;
+}
+
+.level-body h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.level-body i {
+  color: #2e7d32;
+  margin-right: 0.4rem;
+}
+
+.level-body p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.level-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 1.6rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.level-meta i {
+  margin-right: 0.4rem;
+  color: #d94f2a;
+}
+
+.level-btn {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .levels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .level-image {
+    height: 200px;
+  }
 }
