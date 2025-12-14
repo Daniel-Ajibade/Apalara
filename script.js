@@ -169,16 +169,27 @@ window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
 
-const video = document.querySelector('.ceeo-video video');
+const video = document.getElementById('myVideo');
+const overlay = document.querySelector('.tap-to-unmute');
+let userInteracted = false;
 
+// Unlock audio on user interaction
+overlay.addEventListener('click', () => {
+  video.muted = false;
+  video.play();
+  overlay.style.display = 'none';
+  userInteracted = true;
+});
+
+// Scroll autoplay logic
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            video.play();
-        } else {
-            video.pause(); // optional
-        }
-    });
-}, { threshold: 0.5 });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      video.play().catch(() => {});
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.4 });
 
 observer.observe(video);
