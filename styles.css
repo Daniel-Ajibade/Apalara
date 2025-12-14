@@ -1273,3 +1273,78 @@ footer {
     height: 200px;
   }
 }
+/* ==========================
+   VIDEO + LEARNING OUTCOMES
+========================== */
+
+.ceeo {
+  background: #fdf7f2;
+  padding: 4.5rem 2rem;
+}
+
+.ceeo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Video */
+.ceeo-video {
+  flex: 1;
+}
+
+.ceeo-video video {
+  width: 100%;
+  max-height: 360px;
+  border: 1px solid red;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Details */
+.ceeo-detailss {
+  flex: 1;
+}
+
+.ceeo-detailss h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.ceeo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ceeo-list li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.ceeo-list i {
+  color: #d94f2a;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ceeo-container {
+    flex-direction: column;
+  }
+
+  .ceeo-detailss h2 {
+    text-align: center;
+  }
+}
